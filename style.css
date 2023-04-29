@@ -27,7 +27,7 @@
     position: absolute;
 }
 
-/*.div_sin_encripcion = div donde mostraremos el mensaje encriptado*/
+/*.div_sin_encripcion = div donde mostraremos el mensaje de que no hay ningun dat aún*/
 .div_sin_encripcion{
     background: white;
     width: 400px;
@@ -97,7 +97,6 @@
     margin-top: 2px ;
 }
 
-
 /*.div_botones = div donde se encuentran los botones*/
 .div_botones {
     width: 680px;
@@ -126,3 +125,38 @@
     margin: 0 19px 0 0;
 }
 
+/*////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////Pagina 2 del escritorio ///////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*.div_encriptado = div donde mostraremos el mensaje encriptado*/
+.div_encriptado{
+    background: white;
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    margin: 40px 0 0 1000px;
+}
+
+/*.p_parrafo_encriptador = parrafo donde se mostrara el mensaje encriptado*/
+.p_parrafo_encriptador {
+    width: 336px;
+    height: 781px;
+    margin: 40px 0 0 32px;
+    color: darkblue;
+}
+
+/*.boton_copiar = boton que usaremos para copiar los datos del texto encriptado*/
+.boton_copiar{
+    margin-top: 25px;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid darkblue;
+    color: darkblue;
+    font-size: 16px;
+}
