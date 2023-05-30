@@ -1,171 +1,316 @@
-@media screen and (min-width: 1024px){
-/*Pagina principal de ingreso*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "inter";
+}
 
-    /*.fondo = body del proyecto*/
-    .fondo{
-        background: #e5e5e5;
-        font-family: 'Inter', sans-serif;
-    }
+body{
+    background-color:#f4f4fc;
+}
 
-    /*.logo_desktop = logo principal del programa*/
-    .logo_alura{
-        width: 120px;
-        height: 48px;
-        position: absolute;
-        margin: 40px 0 0 40px;
-    }
+header{
+    width: 100%;
+    height: 50%px;
+}
 
-    /*.input_ingresar_texto = input donde ingresaremos el texto*/
-    .input_ingresar_texto{
-        width: 573px;
-        height: 46px;
-        margin: 168px 0 0 240px;
-        line-height: 150%;
-        background: inherit;
-        background-color: transparent;
-        border: 0;
-        font-size: 32px;
-        position: absolute;
-    }
+.logo{
+    width: 100px;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+main{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedorcajatexto{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    padding-left: 50px;
+    width: 940px;
+    height: 600px;
+    
+}
+.cajatexto{
+    width: 60%;
+    height: 100%;
+    border: none;
+    background-color: #f4f4fc;
+    cursor: pointer;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "inter";
+    font-style: normal;
+    line-height: 150%;
+}
 
-    /*.div_sin_encripcion = div donde mostraremos el mensaje de que no hay ningun dat aún*/
-    .div_sin_encripcion{
-        background: white;
-        width: 400px;
-        height: 944px;
-        border-radius: 32px;
-        text-align: center;
-        align-items: center;
-        position: absolute;
-        margin: 40px 0 0 1000px;
-    }
+.cajatexto::placeholder{
+    color: #0A3871;
+}
 
-    /*.img_muneco = imagen del muneco del encriptador*/
-    .img_muneco{
-        margin: 243px 0 0 0; 
-    }
-    /*.div_bloque_texto = div donde se encuentra el bloque de texto del encriptador*/
-    .div_bloque_texto{
-        width: 336px;
-        height: 122px;
-        display: block;
-        margin: auto;
-        padding-top: 11px;
-    }
+.cajatexto:focus,
+.cajatexto:active{
+    border:none;
+    outline: none;
+}
 
-    /*.mensaje = caracteristicas del bloque de texto del encriptador */
-    .mensaje{
-        width: 336px;
-        height: 48px;
-        font-size: 16px;
-        line-height: 150%;
-    }
+.alerta{
+    position: absolute;
+    top: 650px;
+    left: 100px;
+    display: flex;
+    color: #495057;
+}
+.contenedor-botones{
+    position: absolute;
+    top: 680px;
+    height: 80px;
+    padding-left: 8%;
+    padding-top: 15px;
+}
 
-    /*.mensaje:first-child = caracteristicas del primer hijo del bloque de texto del encriptador*/
-    .mensaje:first-child{
-        width: 336px;
-        height: 58px;
-        text-align: top;
-        font-weight: bold;
+.boton-encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "inter";
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.boton-desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "inter";
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.boton-encriptar:hover,
+.boton-desencriptar:hover{
+    width: 340px;
+    height: 70px;
+    
+}
+
+.seccion2{
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    padding-right: 20px;
+    background: #cccccc;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: opx 24px 32 px -8px rgba(0,0,0,0.50);
+}
+.contenedormuneco{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+
+.contenedor-parrafo{
+    position: absolute;
+    box-sizing: border-box;
+    top: 400px;
+    left: 40px;
+}
+.contenedor-parrafo h3{
+    font-size:24px ;
+    font-weight: 700;
+    font-family: "inter";
+    text-align: center;
+    color: #343A40;   
+}
+
+.contenedor-parrafo p{
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+
+.contenedor-resultdo{
+    position: absolute;
+    bottom: 410px;
+    width: 320px;
+    height: 450px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+    
+}
+.contenedor-resultado p{
+    color: #000000;
+    font-size: 25px;
+    margin: 25px 0 0 25px;
+}
+
+.contenedor-copiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 630px;
+    background: aqua;
+    padding-left: 40px;
+}
+
+.boton-copiar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background: #ffffff;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "inter";
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    right: 4px;
+
+}
+.boton-copiar:hover{
+    width: 340px;
+    height: 70px;
+}
+
+.ocultar{
+    display: none;
+}
+
+@media screen and (min-width:500px) and (max-width:920px){
+
+    .alerta{
         font-size: 24px;
-        line-height: 120%;
-        margin: 15px 0 ;
+        top: 50%;
+    }
+    .contenedor-botones{
+        height: 130px;
+        top: 55%;
+    }
+  
+    .boton-encriptar,
+    .boton-desencriptar{
+        font-size: 30px;
+    }
+    .seccion2{
+        top: 80%;
+        right: 40%;
+        background: none;
+        margin-left:40% ;
+    }
+    .contenedormuneco{
+        display: none;
+        visibility: hidden;
+    }
+     
+    .contenedor-parrafo{
+        top: 10%;
     }
 
-    /*.div_advertencia = div donde se encuentra el mensaje de advertencia*/
-    .div_advertencia {
-        position: absolute;
-        width: 229px;
-        height: 18px;
-        margin:851px 0 0 240px;
-        display: inline-flex;
-        text-align: center;
+    .contenedor-parrafo h3{
+        font-size: 40px;
     }
 
-    /*.logo_advertencia = logo del parrafo */
-    .logo_advertencia{
-        width: 16px;
-        height: 16px;
+    .contenedor-parrafo p{
+        font-size: 24px;
     }
 
-    /*.item = texto donde encontramos la advertencia */ 
-    .item{
-        width: 205px;
-        height: 18px;
-        font-size: 12px;
-        align-items: center;
-        color: gray;
-        margin-top: 2px ;
+    .contenedor-copiar{
+        padding-left: 50px;
+        top: 60%;
     }
 
-    /*.div_botones = div donde se encuentran los botones*/
-    .div_botones {
-        width: 680px;
-        height: 67px;
-        margin: 885px 0 0 240px;
-        position: absolute;
+    .boton-copiar{
+        margin: 0px 0px 50px 20px;
+        width: 380px;
+        font-size: 30px;
+        right: 50px;
     }
-
-    /**.botones = caracteristicas principales de los botones*/
-    .botones{
-        width: 328px;
-        height: 67px;
-        font-size: 16px;
-        color: darkblue;
-        background-color: #d8dfe8;
-        border: 1px solid darkblue;
-        border-radius: 24px;
-        cursor: pointer;
-    }
-
-    /*.botones:first-child = caracteristicas del primer hijjo de los botones*/
-    .botones:first-child {
-        color: white;
-        background-color: darkblue;
-        cursor: pointer;
-        margin: 0 19px 0 0;
-    }
-
-    /*////////////////////////////////////////////////////////////////////////////////////////////////
-    //////////////////////////////////////////////////////////////////////////////////////////////////
-    ///////////////////////Pagina 2 del escritorio ///////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-    /*.div_encriptado = div donde mostraremos el mensaje encriptado*/
-    .div_encriptado{
-        background: white;
+    .contenedor-resultado p{
+        font-size: 40px;
         width: 400px;
-        height: 944px;
-        border-radius: 32px;
-        text-align: center;
-        align-items: center;
-        position: absolute;
-        margin: 40px 0 0 1000px;
+        margin-left: 20%;
     }
+  
 
-    /*.p_parrafo_encriptador = parrafo donde se mostrara el mensaje encriptado*/
-    .p_parrafo_encriptador {
-        width: 336px;
-        height: 781px;
-        margin: 40px 0 0 32px;
-        color: darkblue;
-    }
-
-    /*.boton_copiar = boton que usaremos para copiar los datos del texto encriptado*/
-    .boton_copiar{
-        margin-top: 25px;
-        width: 336px;
-        height: 67px;
-        border-radius: 24px;
-        border: 1px solid darkblue;
-        color: darkblue;
-        font-size: 16px;
-    }
-}
-@media screen and (min-width: 767px) and (max-width:1023px) {
-    
 }
 
-@media screen and (max-width:767px){
-    
+
+@media screen and (max-width:480px) {
+    .logo{
+        width: auto;
+    }
+    .cajatexto{
+        font-size: 40px;
+    }
+    .alerta{
+        font-size: 24px;
+    }
+    .contenedor-botones{
+        height: 130px;
+    }
+    .boton-encriptar,
+    .boton-desencriptar{
+        width: 380px;
+        font-size: 30px;
+        margin: 20px;
+    }
+    .seccion2{
+        margin: 1000px 0px 0px 100px;
+        background: none;
+    }
+    .contenedormuneco{
+        display: none;
+        visibility: hidden;
+
+    }
+    .contenedor-parrafo{
+        top: auto;
+       margin-right: 40%;
+    }
+    .contenedor-parrafo h3{
+        font-size: 40px;
+    }
+    .contenedor-parrafo p{
+        font-size: 24px;
+    }
+    .contenedor-copiar{
+        padding-left: 0px;
+        top: 400px;
+    }
+    .boton-copiar{
+        top: 0px;
+        width: 380px;
+        font-size: 30px;
+        right: 50px;
+    }
+    .contenedor-resultado p{
+        font-size: 40px;
+        width: 400px;
+     }
+ 
 }
+
