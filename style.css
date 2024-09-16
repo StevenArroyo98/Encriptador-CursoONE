@@ -1,128 +1,171 @@
+@media screen and (min-width: 1024px){
 /*Pagina principal de ingreso*/
 
-/*.fondo = body del proyecto*/
-.fondo{
-    background: #e5e5e5;
-    font-family: 'Inter', sans-serif;
+    /*.fondo = body del proyecto*/
+    .fondo{
+        background: #e5e5e5;
+        font-family: 'Inter', sans-serif;
+    }
+
+    /*.logo_desktop = logo principal del programa*/
+    .logo_alura{
+        width: 120px;
+        height: 48px;
+        position: absolute;
+        margin: 40px 0 0 40px;
+    }
+
+    /*.input_ingresar_texto = input donde ingresaremos el texto*/
+    .input_ingresar_texto{
+        width: 573px;
+        height: 46px;
+        margin: 168px 0 0 240px;
+        line-height: 150%;
+        background: inherit;
+        background-color: transparent;
+        border: 0;
+        font-size: 32px;
+        position: absolute;
+    }
+
+    /*.div_sin_encripcion = div donde mostraremos el mensaje de que no hay ningun dat aún*/
+    .div_sin_encripcion{
+        background: white;
+        width: 400px;
+        height: 944px;
+        border-radius: 32px;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        margin: 40px 0 0 1000px;
+    }
+
+    /*.img_muneco = imagen del muneco del encriptador*/
+    .img_muneco{
+        margin: 243px 0 0 0; 
+    }
+    /*.div_bloque_texto = div donde se encuentra el bloque de texto del encriptador*/
+    .div_bloque_texto{
+        width: 336px;
+        height: 122px;
+        display: block;
+        margin: auto;
+        padding-top: 11px;
+    }
+
+    /*.mensaje = caracteristicas del bloque de texto del encriptador */
+    .mensaje{
+        width: 336px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    /*.mensaje:first-child = caracteristicas del primer hijo del bloque de texto del encriptador*/
+    .mensaje:first-child{
+        width: 336px;
+        height: 58px;
+        text-align: top;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 120%;
+        margin: 15px 0 ;
+    }
+
+    /*.div_advertencia = div donde se encuentra el mensaje de advertencia*/
+    .div_advertencia {
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        margin:851px 0 0 240px;
+        display: inline-flex;
+        text-align: center;
+    }
+
+    /*.logo_advertencia = logo del parrafo */
+    .logo_advertencia{
+        width: 16px;
+        height: 16px;
+    }
+
+    /*.item = texto donde encontramos la advertencia */ 
+    .item{
+        width: 205px;
+        height: 18px;
+        font-size: 12px;
+        align-items: center;
+        color: gray;
+        margin-top: 2px ;
+    }
+
+    /*.div_botones = div donde se encuentran los botones*/
+    .div_botones {
+        width: 680px;
+        height: 67px;
+        margin: 885px 0 0 240px;
+        position: absolute;
+    }
+
+    /**.botones = caracteristicas principales de los botones*/
+    .botones{
+        width: 328px;
+        height: 67px;
+        font-size: 16px;
+        color: darkblue;
+        background-color: #d8dfe8;
+        border: 1px solid darkblue;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+
+    /*.botones:first-child = caracteristicas del primer hijjo de los botones*/
+    .botones:first-child {
+        color: white;
+        background-color: darkblue;
+        cursor: pointer;
+        margin: 0 19px 0 0;
+    }
+
+    /*////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////Pagina 2 del escritorio ///////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+    /*.div_encriptado = div donde mostraremos el mensaje encriptado*/
+    .div_encriptado{
+        background: white;
+        width: 400px;
+        height: 944px;
+        border-radius: 32px;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        margin: 40px 0 0 1000px;
+    }
+
+    /*.p_parrafo_encriptador = parrafo donde se mostrara el mensaje encriptado*/
+    .p_parrafo_encriptador {
+        width: 336px;
+        height: 781px;
+        margin: 40px 0 0 32px;
+        color: darkblue;
+    }
+
+    /*.boton_copiar = boton que usaremos para copiar los datos del texto encriptado*/
+    .boton_copiar{
+        margin-top: 25px;
+        width: 336px;
+        height: 67px;
+        border-radius: 24px;
+        border: 1px solid darkblue;
+        color: darkblue;
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width:1023px) {
+    
 }
 
-/*.logo_desktop = logo principal del programa*/
-.logo_alura{
-    width: 120px;
-    height: 48px;
-    position: absolute;
-    margin: 40px 0 0 40px;
+@media screen and (max-width:767px){
+    
 }
-
-/*.input_ingresar_texto = input donde ingresaremos el texto*/
-.input_ingresar_texto{
-    width: 573px;
-    height: 46px;
-    margin: 168px 0 0 240px;
-    line-height: 150%;
-    background: inherit;
-    background-color: transparent;
-    border: 0;
-    font-size: 32px;
-    position: absolute;
-}
-
-/*.div_sin_encripcion = div donde mostraremos el mensaje encriptado*/
-.div_sin_encripcion{
-    background: white;
-    width: 400px;
-    height: 944px;
-    border-radius: 32px;
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    margin: 40px 0 0 1000px;
-}
-
-/*.img_muneco = imagen del muneco del encriptador*/
-.img_muneco{
-    margin: 243px 0 0 0; 
- }
-/*.div_bloque_texto = div donde se encuentra el bloque de texto del encriptador*/
-.div_bloque_texto{
-    width: 336px;
-    height: 122px;
-    display: block;
-    margin: auto;
-    padding-top: 11px;
-}
-
-/*.mensaje = caracteristicas del bloque de texto del encriptador */
-.mensaje{
-    width: 336px;
-    height: 48px;
-    font-size: 16px;
-    line-height: 150%;
-}
-
-/*.mensaje:first-child = caracteristicas del primer hijo del bloque de texto del encriptador*/
-.mensaje:first-child{
-    width: 336px;
-    height: 58px;
-    text-align: top;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 120%;
-    margin: 15px 0 ;
-}
-
-/*.div_advertencia = div donde se encuentra el mensaje de advertencia*/
-.div_advertencia {
-    position: absolute;
-    width: 229px;
-    height: 18px;
-    margin:851px 0 0 240px;
-    display: inline-flex;
-    text-align: center;
-}
-
-/*.logo_advertencia = logo del parrafo */
-.logo_advertencia{
-    width: 16px;
-    height: 16px;
-}
-
-/*.item = texto donde encontramos la advertencia */ 
-.item{
-    width: 205px;
-    height: 18px;
-    font-size: 12px;
-    align-items: center;
-    color: gray;
-    margin-top: 2px ;
-}
-
-
-/*.div_botones = div donde se encuentran los botones*/
-.div_botones {
-    width: 680px;
-    height: 67px;
-    margin: 885px 0 0 240px;
-    position: absolute;
-}
-
-/**.botones = caracteristicas principales de los botones*/
-.botones{
-    width: 328px;
-    height: 67px;
-    font-size: 16px;
-    color: darkblue;
-    background-color: #d8dfe8;
-    border: 1px solid darkblue;
-    border-radius: 24px;
-    cursor: pointer;
-}
-
-/*.botones:first-child = caracteristicas del primer hijjo de los botones*/
-.botones:first-child {
-    color: white;
-    background-color: darkblue;
-    cursor: pointer;
-    margin: 0 19px 0 0;
-}
-
